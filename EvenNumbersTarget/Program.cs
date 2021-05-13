@@ -9,19 +9,26 @@ namespace EvenNumbersTarget
             Console.WriteLine("Hello Even Numbers Target app");
             
             Console.WriteLine("Enter your first Number:");
-            int FirstNumber = int.Parse(Console.ReadLine());
+            int Start = int.Parse(Console.ReadLine());
             
             Console.WriteLine("Enter your Target Number:");
             int TargettNumber = int.Parse(Console.ReadLine());
 
-            for(int i = FirstNumber;i<=TargettNumber;i++)
+            //for (int i = Start; i <= TargettNumber; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.Write(i + " ");
+            //    }
+            //}
+            //Console.WriteLine();
+            while(Start <= TargettNumber)
             {
-                if (i % 2 == 0)
-                {
-                    Console.Write(i+" ");
-                }
+                if(Start % 2 == 0)
+                Console.Write(Start+" ");
+                Start += 1;
+                
             }
-            Console.WriteLine();
         }
     }
 }
